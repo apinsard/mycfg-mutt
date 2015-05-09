@@ -1,0 +1,18 @@
+#-----------------------------------------------------------------------------
+# Sidebar configuration
+#-----------------------------------------------------------------------------
+
+set sidebar_width=30
+set sidebar_visible=yes
+set sidebar_delim='|'
+color sidebar_new yellow default
+
+bind index <Left> sidebar-prev
+bind index <Right> sidebar-next
+bind index \cO sidebar-open
+bind pager <Left> sidebar-prev
+bind pager <Right> sidebar-next
+bind pager \cO sidebar-open
+
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'

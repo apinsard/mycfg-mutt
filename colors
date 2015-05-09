@@ -1,0 +1,20 @@
+#-----------------------------------------------------------------------------
+# Color scheme
+#-----------------------------------------------------------------------------
+color normal      white           default
+color hdrdefault  green           default
+color quoted      green           default
+color quoted1     yellow          default
+color quoted2     red             default
+color signature   cyan            default
+color indicator   brightwhite     black
+color error       brightred       default
+color status      brightwhite     blue
+color tree        brightmagenta   default
+color tilde       blue            default
+color attachment  brightyellow    default
+color markers     brightred       default
+color message     white           default
+color search      brightwhite     magenta
+color bold        brightyellow    default
+color progress    white           black

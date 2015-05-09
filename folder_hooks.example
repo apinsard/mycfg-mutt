@@ -1,0 +1,12 @@
+#-----------------------------------------------------------------------------
+# Folder Hooks
+#-----------------------------------------------------------------------------
+
+# First account
+macro index,pager <f1> '<sync-mailbox><enter-command>source ~/.mutt/gmail.account/muttrc<enter><change-folder>!<enter>'
+
+# Second account
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/example.account/muttrc<enter><change-folder>!<enter>'
+
+# Set default account
+source ~/.mutt/gmail.account/muttrc

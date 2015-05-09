@@ -1,0 +1,16 @@
+# Pager
+bind pager <Down>   next-line
+bind pager <Up>     previous-line
+bind pager g        top
+bind pager G        bottom
+bind pager <Home>   exit
+
+# Index
+bind index g        first-entry
+bind index G        last-entry
+bind index \cR      imap-fetch-mail
+bind index N        toggle-new
+bind index \cN      mail
+bind index r        reply
+bind index R        group-reply
+
