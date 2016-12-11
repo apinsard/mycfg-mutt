@@ -1,0 +1,29 @@
+source ~/.config/mutt/muttrc
+
+set from = "antoine.pinsard@aladom.fr"
+set realname = "Antoine Pinsard"
+
+set my_pass = "`gpg -d ~/.secret/.passwd.gpg | grep ^mail_aladom: | cut -d: -f2-`"
+
+set imap_user = "antoine.pinsard@aladom.fr"
+set imap_pass = $my_pass
+set smtp_pass = $my_pass
+
+set signature = ~/.config/mutt/aladom/signature
+
+set folder = "imaps://antoine.pinsard@aladom.fr@imap.gmail.com/"
+set spoolfile = "=INBOX"
+set record = ""
+set postponed = "=[Gmail]/Drafts"
+set mbox = "=[Gmail]/All Mail"
+
+set smtp_url = "smtps://antoine.pinsard@aladom.fr@smtp.gmail.com/"
+
+unmailboxes *
+mailboxes "=INBOX"
+mailboxes "=[Gmail]/Sent Mail"
+mailboxes "=[Gmail]/Drafts"
+mailboxes "=Server reports"
+mailboxes "=Queued"
+
+source ~/.config/mutt/aladom/aliases

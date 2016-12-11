@@ -7,9 +7,9 @@ color quoted      green           default
 color quoted1     yellow          default
 color quoted2     red             default
 color signature   cyan            default
-color indicator   brightwhite     black
+color indicator   default         black
 color error       brightred       default
-color status      brightwhite     blue
+color status      color215        color238
 color tree        brightmagenta   default
 color tilde       blue            default
 color attachment  brightyellow    default
@@ -18,3 +18,6 @@ color message     white           default
 color search      brightwhite     magenta
 color bold        brightyellow    default
 color progress    white           black
+color index       brightgreen     default   ~N
+color index       green           default   ~O
+color index       color214        default   ~F

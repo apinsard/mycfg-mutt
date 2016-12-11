@@ -1,0 +1,29 @@
+source ~/.config/mutt/muttrc
+
+set from = "antoine.pinsard@cocoonr.fr"
+set realname = "Antoine Pinsard"
+
+set my_pass = "`gpg -d ~/.secret/.passwd.gpg | grep ^mail_cocoonr: | cut -d: -f2-`"
+
+set imap_user = "antoine.pinsard@cocoonr.fr"
+set imap_pass = $my_pass
+set smtp_pass = $my_pass
+
+set signature = ~/.config/mutt/cocoonr/signature
+
+set folder = "imaps://antoine.pinsard@cocoonr.fr@imap.gmail.com/"
+set spoolfile = "=INBOX"
+set record = ""
+set postponed = "=[Gmail]/Drafts"
+set mbox = "=[Gmail]/All Mail"
+
+set smtp_url = "smtps://antoine.pinsard@cocoonr.fr@smtp.gmail.com/"
+
+unmailboxes *
+mailboxes "=INBOX"
+mailboxes "=[Gmail]/Sent Mail"
+mailboxes "=[Gmail]/Drafts"
+mailboxes "=Server Errors"
+mailboxes "=Queued"
+
+source ~/.config/mutt/cocoonr/aliases

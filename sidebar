@@ -2,17 +2,17 @@
 # Sidebar configuration
 #-----------------------------------------------------------------------------
 
-set sidebar_width=40
-set sidebar_visible=yes
-set sidebar_delim='|'
+set sidebar_width=20
+set sidebar_visible=no
+set sidebar_short_path=yes
+set sidebar_divider_char=' '
+set sidebar_format="%B%* %N"
 color sidebar_new yellow default
 
-bind index <Left> sidebar-prev
-bind index <Right> sidebar-next
-bind index \cO sidebar-open
-bind pager <Left> sidebar-prev
-bind pager <Right> sidebar-next
-bind pager \cO sidebar-open
+bind index,pager <Left>  sidebar-prev
+bind index,pager <Right> sidebar-next
+bind index,pager \cO     sidebar-open
+bind index,pager <F2>    sidebar-toggle-visible
 
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'

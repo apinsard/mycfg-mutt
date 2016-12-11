@@ -1,0 +1,28 @@
+source ~/.config/mutt/muttrc
+
+set from = "antoine.pinsard@gmail.com"
+set realname = "Antoine Pinsard"
+
+set my_pass = "`gpg -d ~/.secret/.passwd.gpg | grep ^mail_personal: | cut -d: -f2-`"
+
+set imap_user = "antoine.pinsard@gmail.com"
+set imap_pass = $my_pass
+set smtp_pass = $my_pass
+
+set signature = ~/.config/mutt/personal/signature
+
+set folder = "imaps://antoine.pinsard@gmail.com@imap.gmail.com/"
+set spoolfile = "=INBOX"
+set record = ""
+set postponed = "=[Gmail]/Drafts"
+set mbox = "=[Gmail]/All Mail"
+
+set smtp_url = "smtps://antoine.pinsard@gmail.com@smtp.gmail.com/"
+
+
+unmailboxes *
+mailboxes "=INBOX"
+mailboxes "=[Gmail]/Sent Mail"
+mailboxes "=[Gmail]/Drafts"
+
+source ~/.config/mutt/personal/aliases

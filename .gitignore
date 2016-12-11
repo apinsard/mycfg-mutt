@@ -1,7 +1,3 @@
 aliases
-folder_hooks
-account_hooks
 
-*.account/
-!example.account/
-
+local.muttrc
