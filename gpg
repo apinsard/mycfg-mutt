@@ -24,6 +24,6 @@ set pgp_list_secring_command = "/usr/bin/gpg --no-verbose --batch --with-colons 
 set pgp_autosign = yes
 set pgp_verify_sig = yes
 set pgp_replysignencrypted = yes
-set pgp_timeout = 84000
+set pgp_timeout = 32767
 set pgp_good_sign = "^gpg: Good signature from"
 set smime_decrypt_use_default_key=yes

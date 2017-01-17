@@ -24,6 +24,7 @@ mailboxes "=INBOX"
 mailboxes "=[Gmail]/Sent Mail"
 mailboxes "=[Gmail]/Drafts"
 mailboxes "=Server Errors"
+mailboxes "=Server emails"
 mailboxes "=Queued"
 
 source ~/.config/mutt/cocoonr/aliases

@@ -1,7 +1,7 @@
 set send_charset="utf-8"
 set assumed_charset="iso-8859-1" # Windows
 
-set editor="vim -c 'set syntax=mail ft=mail enc=utf-8'"
+set editor="nvim -c 'set syntax=mail ft=mail enc=utf-8'"
 
 set menu_scroll=yes
 
